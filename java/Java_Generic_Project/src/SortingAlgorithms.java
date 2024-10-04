@@ -6,9 +6,7 @@ public class SortingAlgorithms {
             swapped = false;
             for (int j = 0; j < n - i - 1; j++) {
                 if (array[j] > array[j + 1]) {
-                    int temp = array[j];
-                    array[j] = array[j + 1];
-                    array[j + 1] = temp;
+                    swap(array, j, j + 1);
                     swapped = true;
                 }
             }
@@ -26,9 +24,13 @@ public class SortingAlgorithms {
                     minIndex = j;
                 }
             }
-            int temp = array[minIndex];
-            array[minIndex] = array[i];
-            array[i] = temp;
+            swap(array, minIndex, i);
         }
+    }
+
+    private static void swap(int[] array, int i, int j) {
+        int temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 }
