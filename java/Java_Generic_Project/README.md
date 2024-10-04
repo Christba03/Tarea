@@ -1,18 +1,25 @@
-## Getting Started
+# Sorting Algorithms in Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descripción
 
-## Folder Structure
+Este proyecto implementa varios algoritmos de ordenamiento en Java, permitiendo a los usuarios seleccionar y ejecutar diferentes métodos para ordenar un arreglo de enteros. Se han implementado los siguientes algoritmos:
 
-The workspace contains two folders by default, where:
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Merge Sort
+- Quick Sort
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+El objetivo de este proyecto es proporcionar una comprensión clara de cómo funcionan estos algoritmos y ofrecer una interfaz simple para interactuar con ellos.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Algoritmos Implementados
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+1. **Bubble Sort**: Un algoritmo simple que repetidamente recorre la lista, compara elementos adyacentes y los intercambia si están en el orden incorrecto.
 
-## Dependency Management
+2. **Selection Sort**: Este algoritmo divide la lista en dos partes: la sublista ordenada y la sublista no ordenada. Repetidamente selecciona el elemento más pequeño de la sublista no ordenada y lo mueve a la sublista ordenada.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+3. **Insertion Sort**: Construye una sublista ordenada al insertar elementos de la sublista no ordenada en su posición correcta.
+
+4. **Merge Sort**: Un algoritmo eficiente de ordenamiento que utiliza la técnica de divide y vencerás para dividir la lista en dos mitades, ordenarlas y luego combinarlas.
+
+5. **Quick Sort**: Otro algoritmo de ordenamiento eficiente que selecciona un elemento como pivote y particiona el arreglo en subarreglos, ordenando recursivamente las sublistas.
