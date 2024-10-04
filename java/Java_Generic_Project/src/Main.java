@@ -1,12 +1,12 @@
-public class App {
+public class Main {
     public static void main(String[] args) {
         int[] array = { 5, 3, 8, 4, 2 };
-        System.out.println("Array before Bubble Sort:");
+        System.out.println("Array before Selection Sort:");
         printArray(array);
 
-        SortingAlgorithms.bubbleSort(array);
+        SortingAlgorithms.selectionSort(array);
 
-        System.out.println("Array after Bubble Sort:");
+        System.out.println("Array after Selection Sort:");
         printArray(array);
     }
 
