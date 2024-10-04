@@ -2,6 +2,10 @@ public class Main {
     public static void main(String[] args) {
         runTests();
 
+        // Puedes descomentar para probar manualmente cualquier algoritmo si lo deseas:
+        // int[] array = {5, 3, 8, 4, 2};
+        // SortingAlgorithms.bubbleSort(array);
+        // printArray(array);
     }
 
     // Método para imprimir el arreglo
