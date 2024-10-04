@@ -1,4 +1,9 @@
 public class SortingAlgorithms {
+    /**
+     * Sorts an array using the Bubble Sort algorithm.
+     * 
+     * @param array the array to be sorted
+     */
     public static void bubbleSort(int[] array) {
         int n = array.length;
         boolean swapped;
@@ -15,6 +20,11 @@ public class SortingAlgorithms {
         }
     }
 
+    /**
+     * Sorts an array using the Selection Sort algorithm.
+     * 
+     * @param array the array to be sorted
+     */
     public static void selectionSort(int[] array) {
         int n = array.length;
         for (int i = 0; i < n - 1; i++) {
@@ -28,6 +38,11 @@ public class SortingAlgorithms {
         }
     }
 
+    /**
+     * Sorts an array using the Insertion Sort algorithm.
+     * 
+     * @param array the array to be sorted
+     */
     public static void insertionSort(int[] array) {
         int n = array.length;
         for (int i = 1; i < n; i++) {
@@ -41,6 +56,11 @@ public class SortingAlgorithms {
         }
     }
 
+    /**
+     * Sorts an array using the Merge Sort algorithm.
+     * 
+     * @param array the array to be sorted
+     */
     public static void mergeSort(int[] array) {
         if (array.length < 2) {
             return;
@@ -58,6 +78,13 @@ public class SortingAlgorithms {
         merge(array, left, right);
     }
 
+    /**
+     * Merges two subarrays into the original array.
+     * 
+     * @param array the array to merge into
+     * @param left  the left subarray
+     * @param right the right subarray
+     */
     private static void merge(int[] array, int[] left, int[] right) {
         int i = 0, j = 0, k = 0;
         while (i < left.length && j < right.length) {
@@ -75,6 +102,13 @@ public class SortingAlgorithms {
         }
     }
 
+    /**
+     * Swaps two elements in an array.
+     * 
+     * @param array the array in which the elements will be swapped
+     * @param i     the index of the first element
+     * @param j     the index of the second element
+     */
     private static void swap(int[] array, int i, int j) {
         int temp = array[i];
         array[i] = array[j];
