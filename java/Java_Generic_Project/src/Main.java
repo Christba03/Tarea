@@ -1,11 +1,39 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        runTests();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Choose a sorting algorithm:");
+        System.out.println("1 - Bubble Sort");
+        System.out.println("2 - Selection Sort");
+        System.out.println("3 - Insertion Sort");
+        System.out.println("4 - Merge Sort");
+        int choice = scanner.nextInt();
 
-        // Puedes descomentar para probar manualmente cualquier algoritmo si lo deseas:
-        // int[] array = {5, 3, 8, 4, 2};
-        // SortingAlgorithms.bubbleSort(array);
-        // printArray(array);
+        int[] array = { 5, 3, 8, 4, 2 };
+        System.out.println("Array before sorting:");
+        printArray(array);
+
+        switch (choice) {
+            case 1:
+                SortingAlgorithms.bubbleSort(array);
+                break;
+            case 2:
+                SortingAlgorithms.selectionSort(array);
+                break;
+            case 3:
+                SortingAlgorithms.insertionSort(array);
+                break;
+            case 4:
+                SortingAlgorithms.mergeSort(array);
+                break;
+            default:
+                System.out.println("Invalid choice.");
+                return;
+        }
+
+        System.out.println("Array after sorting:");
+        printArray(array);
     }
 
     // Método para imprimir el arreglo
